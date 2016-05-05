@@ -28,6 +28,9 @@ before_install:
 
 # Create a catkin workspace with the package under test.
 install:
+  # TODO(wkentaro): https://github.com/ros/rosdistro/pull/11412
+  - sudo -H apt-get install -y -qq cython
+
   - mkdir -p $CATKIN_WS/src
 
   # Add the package under test to the workspace.
