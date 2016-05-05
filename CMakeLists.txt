@@ -117,11 +117,6 @@ catkin_package(
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 include(UseCython)
-add_custom_target(ReplicatePythonSourceTree ALL
-  ${CMAKE_COMMAND} -P cmake/ReplicatePythonSourceTree.cmake
-  ${CMAKE_CURRENT_BINARY_DIR}
-  WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-)
 add_subdirectory(python/${PROJECT_NAME})
 
 
