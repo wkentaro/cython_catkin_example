@@ -1,6 +1,9 @@
 cython_catkin_example
 =====================
 
+.. image:: https://travis-ci.org/wkentaro/cython_catkin_example.svg?branch=master
+    :target: https://travis-ci.org/wkentaro/cython_catkin_example
+
 
 Simple example of Catkin + Cython.
 
